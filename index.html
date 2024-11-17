@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles/reset.css" />      <!--  Las referencias se leen EN ORDEN -->
+    <link rel="stylesheet" href="./styles/styles.css"/>      <!--  Primero resetea y luego aplica nuestros styles  --> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class ="title"> 
+
+        <h1 id="nombre">Ignacio Alonso</h1>
+        <h2>Proyecto del modulo</h2>
+    </div>
+    <div class ="seccion">
+        <h2>Sobre mi</h2>
+        <p id="presentacion">Nací en Bahia Blanca, tengo 19 años y desde que tuve acercamiento a la tecnología me dió
+            curiosidad el funcionamiento de las computadoras y los programas. Cuando entré en la programacion empezó a apasionarme.
+            Disfruto mucho de aprender de temas que me interesan como también descubrir nuevas pasiones</p>
+    </div>
+    <article>
+
+            
+            <div class="techContainer">
+                <h2>Mis tecnologias favoritas</h2>
+                <div class ="conten">
+                    <div class ="cards">
+                        
+                        <h3>Inteligencia Artificial</h3>
+                        <img src="./Assets/AI icon.jpg" class="logo"/>
+                        
+                    </div>
+                    <div class ="cards">
+                        
+                        <h3>Ciberseguridad</h3>
+                        <img src="./Assets/Cybersecurity.jpg" class="logo"/>
+                    </div>
+                    <div class ="cards">
+                    
+                    <h3>Bases de datos</h3>
+                    <img src="./Assets/Bases de datos.jpg " class="logo"/>
+                    </div>
+                </div>
+            </div>
+    </article>
+    <fieldset>
+        <div class="form">
+            <h2 id="formTitle">Crea una actividad</h2>
+            <div class="activityFill">
+                <input type="text" class="textToFill" id="boxTitulo"v placeholder="Titulo de la Actividad"/>
+            </div>
+            <div class="activityFill">
+
+                <textarea type="text" class="descriptionToFill" id="boxDescription" placeholder="Describe la actividad"></textarea>
+            </div>
+            <div class="activityFill">
+                
+                <input type="url" class="textToFill" id="boxUrl" placeholder="URL de imagen"/>   
+            </div>
+            <div class="activityFill">
+                
+                <button class="activityButton" id="actButton">Crear Actividad</button>
+            </div>
+        </div>
+    </fieldset>
+
+    <div id="userActivities">
+        <h2>Aqui irán tus actividades</h2>
+        
+    </div>
+     <script src="./scripts/index.js"></script>    <!-- src es source -->
+    </body>
+</html>

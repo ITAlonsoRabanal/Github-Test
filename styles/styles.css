@@ -1,0 +1,209 @@
+* {    
+    color: white;             /* '* aplica a propiedades a para TODA la pagina ' */
+}
+
+body {
+    background-color:rgb(26, 26, 26);
+
+    margin: auto;
+}
+
+.title {
+    width: 50vw;                 /* porcentaje de la pantalla que ocupa */
+    margin: auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nombre {
+    font-size: 3em;
+}
+
+#presentacion {
+    text-align: center;
+}
+
+
+.seccion {
+
+    background-color: rgb(108, 108, 108);            /* rgb(108, 108, 108); original */
+    border: 2px solid rgb(54, 54, 54);
+    border-radius: 10px;   
+    width: 50vw;                 /* porcentaje de la pantalla que ocupa */
+    margin: auto;
+    margin-bottom: 2em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conten {
+    background-color: rgb(108, 108, 108);
+    width: 85vw;
+    margin: auto;
+    display: flex;               /* Serie de ajustes predeterminados */
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2em;
+}
+
+.cards {
+    background-color: rgb(8, 8, 8);
+    border-top-left-radius: 10px;   
+    border-top-right-radius: 10px;   
+    border-bottom-right-radius: 10px; 
+    border-bottom-left-radius: 10px;  
+    padding:  1em 1em 1em 1em;
+    transition: 1s; 
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    max-width: 30%;
+}
+
+
+/*
+              Primer intento de techContainer
+
+#box {
+    margin-left: 0;
+    border: 2px solid rgb(54,);
+    border-top-left-radius: 10px;   
+    border-top-right-radius: 10px;   
+    border-bottom-right-radius: 10px; 
+    border-bottom-left-radius: 10px;  
+    background-color: rgb(108, 108, 108);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    padding: 2em;
+}
+
+*/
+
+/* segundo intento techContainer */
+
+.techContainer {
+
+    background-color: rgb(108, 108, 108);            /* rgb(108, 108, 108); original */
+    border: 2px solid rgb(54, 54, 54);
+    border-top-left-radius: 10px;   
+    border-top-right-radius: 10px;   
+    border-bottom-right-radius: 10px; 
+    border-bottom-left-radius: 10px;    
+    max-width: fit-content;            
+    margin: auto;
+    margin-bottom: 2em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+}
+
+fieldset {
+    border: 0;
+    margin: 4%;
+}
+
+.form {
+    background-color: rgb(108, 108, 108); 
+
+    background-color: rgb(108, 108, 108);            /* rgb(108, 108, 108); original */
+    border: 2px solid rgb(54, 54, 54);
+    border-radius: 10px;             
+    margin: auto;
+    padding: 1em;
+}
+
+#formTitle {
+    padding: 0.2em 1em 0.2em 1em;
+}
+
+.activityFill {
+    gap: 1em;
+    padding: 0.2em 1em 0.2em 1em;
+    margin: auto;
+}
+
+.textToFill {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    width: fit-content;
+    margin: auto;
+    background-color: rgb(8, 8, 8);
+
+    font-size: larger;
+    width: 100%;
+    border: 2px solid rgb(54, 54, 54);
+    border-radius: 10px;             
+  
+}
+
+.descriptionToFill {   
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    width: fit-content;
+    margin: auto;
+    background-color: rgb(8, 8, 8);
+
+    font-size: larger;
+    width: 100%;
+    height: 8em;
+    border: 2px solid rgb(54, 54, 54);
+    border-radius: 10px;             
+
+}
+
+.activityButton {
+    background-color: black;
+    padding: 0.2em 1em 0.2em 1em;
+    gap: 1em;
+    border-color: 0;
+    border-radius: 5px;
+    border: 2px solid rgb(54, 54, 54);
+    border-radius: 10px;          
+}
+
+.activityButton:hover {
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 16px white;
+    transition: all 0.2s ease;
+  }
+
+  #userActivities {
+    background-color: rgb(108, 108, 108);            /* rgb(108, 108, 108); original */
+    border: 2px solid rgb(54, 54, 54);
+    border-top-left-radius: 10px;   
+    border-top-right-radius: 10px;   
+    border-bottom-right-radius: 10px; 
+    border-bottom-left-radius: 10px;    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2em;
+    margin: 5em;
+    gap: 3em;
+    justify-content: center;
+    min-width: 50%;
+    min-height: auto;
+  }
+
+  .activityText {
+    display: flex;
+    max-width: fit-content;
+    white-space: normal;         /* Permitir que el texto fluya en varias líneas */
+    word-wrap: break-word;       /* Rompe palabras largas al llegar al borde */
+    overflow-wrap: break-word;   /* Para navegadores modernos */
+    word-break: break-word;      /* Compatible con más navegadores */
+    align-items: center;
+  } 
